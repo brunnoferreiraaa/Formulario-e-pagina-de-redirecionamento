@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            margin-top: 2%;
+            background-image: url(walpaper-xadrez.jpg);
+        }
+
+        button{
+            display: block;
+            margin: auto;
+            padding: 10px;
+            height: 70px;
+            width: 600px;
+            background-color: #dae1e7;
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+
+      div{
+        margin-top: 3%;
+      }
+
+        a{
+            font-family: 'Rubik Glitch',sans-serif;
+            font-size: 1.7em;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            text-shadow: 2px 2px grey;
+            cursor: pointer;
+        }
+
+        @media (min-width:300px)  and (max-width: 420px){
+            button{
+                height: 50px;
+                width: 250px;
+            }
+
+            a{
+                font-size: 1.1em;
+            }
+        }
+
+        @media (min-width:430px)  and (max-width: 600px){
+            button{
+                height: 60px;
+                width: 350px;
+            }
+
+            a{
+                font-size: 1.2em;
+            }
+        }

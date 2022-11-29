@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato </title>
+    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,500;1,600&display=swap');
+
+            :root{
+                --color-white: #fff;
+                --color-dark1: #dae1e7;
+                --color-dark2: #142850;
+                --color-dark3: #414141;
+                --color-dark4: #00909E;
+                --color-dark5: #343434;
+                
+            }
+            *{
+                padding:0;
+                margin: 0;
+            }
+
+            body{
+               background-color: var(--color-dark1); 
+            }
+            header{
+                display: block;
+                margin: auto ;
+                width: 500px;
+                text-align: center;
+                border-radius: 20px;
+                padding:15px;
+                background-color:var(--color-dark4);
+                color: var(--color-white);
+                font-family: 'Raleway', sans-serif; 
+                margin-top: 30px;
+            }
+
+            section{
+                display: flex;
+                align-items:center;
+                justify-content:  center;
+                margin-top: 30px;
+            }
+
+            form div{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+
+            form input, form textarea {
+                outline: unset;
+                padding: 10px;
+                width: 300px;
+                border: 1px solid var(--color-dark4);
+                border-radius: 20px;
+                font-family: 'Raleway', sans-serif;
+            }
+
+            form input:focus, form textarea:focus {
+                background-color: rgba(122, 163, 197, 0.384);  
+             } 
+             
+             .botão{
+                margin-top: 50px;
+             }
+             
+              button,[type=submit]{
+                 background-color: var(--color-dark4);
+                 color:bisque; 
+                 cursor:pointer;
+                 border-radius: 20px;
+                 border: none;
+                 font-size: 1em;
+                 font-family: 'Raleway', sans-serif;
+             }
+
+             form label {
+                 margin-left:10px;
+                 margin-bottom: 2px;
+             }
+
+             @media  (max-width: 500px){
+                form input, form textarea{
+                    padding-top:8px;
+                    width: 250px;
+                }
+
+                header{
+                    height: 25px;
+                    font-size: 0.6em;
+                    width: 360px;
+                }
+             }
+
+             @media  (max-width: 400px){
+                form input, form textarea{
+                    padding-top:8px;
+                    width: 300px;
+                    color: black;
+                }
+
+                header{
+                    height: 25px;
+                    font-size: 0.7em;
+                    width: 340px;
+                }
+             }
+
+             @media (max-width: 350px){
+                form input, form textarea{
+                    padding-top:8px;
+                    width: 280px;
+                    color: black;
+                }
+
+                header{
+                    height: 25px;
+                    font-size: 0.7em;
+                    width: 300px;
+                }
+             }
+
+             @media (max-width: 300px){
+                form input, form textarea{
+                    padding-top:8px;
+                    width: 220px;
+                    color: black;
+                }
+
+                header{
+                    height: 20px;
+                    font-size: 0.6em;
+                    width: 250px;
+                }
+             }
+             
+  
+        </style>
+</head>
+<body>
+    <header>
+         <h1>Formulário para Contato</h1>
+    </header>  
+
+    <section> 
+        <form>
+             <div>
+                 <label>Nome</label>
+                 <input type="text" placeholder="Digite seu nome" name="nome" required/>
+             </div>
+ 
+             <div>
+                 <label>E-mail</label>
+                 <input type="text" placeholder="Digite seu e-mail" name="email" required/> 
+             </div>
+            <div>
+                <label>Mensagem</label>
+                <textarea rows="10" name="msg" placeholder="Deixe aqui sua mensagem..." required ></textarea>
+            </div>
+            <div class="botão">
+                <button><input type="submit" value="Enviar"></button>
+            </div>
+        </form>
+ </section>
+</body>
+</html>
